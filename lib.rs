@@ -91,7 +91,7 @@ mod my_first_contract {
                 .call(&ink_e2e::bob(), &flip)
                 .submit()
                 .await
-                .expect("flip failed");
+                .expect("flip failed ");
 
             let get = call_builder.get();
             let get_result = client.call(&ink_e2e::bob(), &get).dry_run().await?;
