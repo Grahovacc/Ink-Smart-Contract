@@ -10,7 +10,7 @@ mod my_first_contract {
     impl MyFirstContract {
         #[ink(constructor)]
         pub fn new(init_value: bool) -> Self {
-            Self { value: init_value }
+             Self { value: init_value }
         }
 
         #[ink(constructor)]
