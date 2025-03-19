@@ -58,7 +58,7 @@ mod my_first_contract {
         #[ink_e2e::test]
         async fn default_works(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
             let mut constructor = MyFirstContractRef::default();
-            let contract = client
+            let contract = client 
                 .instantiate("my_first_contract", &ink_e2e::alice(), &mut constructor)
                 .submit()
                 .await
